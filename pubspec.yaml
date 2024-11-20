@@ -40,9 +40,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/image/butterfly.jpg
-    - assets/image/dog.jpg
-    - assets/image/tiger.jpg
+    - assets/image/
 
   fonts:
     - family: Satoshi
