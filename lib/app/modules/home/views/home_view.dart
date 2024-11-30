@@ -12,6 +12,15 @@ class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
   @override
   Widget build(BuildContext context) {
+    return AnimalView();
+  }
+}
+
+class AnimalView extends StatelessWidget {
+  const AnimalView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (_) {
       return Scaffold(
         backgroundColor: ColorTheme.clrBgApp,
@@ -32,16 +41,9 @@ class HomeView extends GetView<HomeController> {
                         decoration: BoxDecoration(
                             color: ColorTheme.clrShadow,
                             borderRadius: BorderRadius.circular(16)),
-                        // height: 200,
                         width: 200,
                       ),
                     ),
-                    // Positioned(
-                    //   top: 150,
-                    //   left: 40,
-                    //   right: 120,
-                    //   child:
-                    // ),
                     Padding(
                       padding: const EdgeInsets.all(24.0),
                       child: Column(
